@@ -76,11 +76,16 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   .leagueItem {
     .itemDetailsContainer {
+      flex-direction: column;
       .itemDetail {
-        padding: 0.5rem;
+        display: flex;
+        padding: 0.25rem 0.75rem;
+        .detailTitle {
+          min-width: 85px;
+        }
       }
     }
   }
