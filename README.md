@@ -36,11 +36,23 @@ The goal was to consume the [TheSportsDB API](https://www.thesportsdb.com/free_s
 
 - **classnames** → simplifies conditional `className` handling.
 - **sass-embedded** → enables the use of **Sass** stylesheets for better modular and maintainable styling.
+- **gh-pages** → used for deploying the app to GitHub Pages.
 
 ## Request Caching
 
 Implemented **request caching** for the Seasons API (`search_all_seasons.php`) using a **closure function**.  
 This ensures that once data is fetched for a league, it is stored in memory and reused, avoiding unnecessary repeat network requests.
+
+
+## Deployment
+The project is deployed with **GitHub Pages** using the `gh-pages` package.  
+You can visit the live version here:  
+👉 [https://sargis-grigoryan.github.io/sporty](https://sargis-grigoryan.github.io/sporty)
+
+To deploy the project yourself, simply run:
+```bash
+npm run deploy
+```
 
 ## AI Tools Usage
 
@@ -51,8 +63,8 @@ This ensures that once data is fetched for a league, it is stored in memory and 
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+   git clone https://github.com/sargis-grigoryan/sporty.git
+   cd sporty
    ```
 2. Install dependencies:
    ```bash
