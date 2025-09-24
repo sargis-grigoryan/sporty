@@ -1,0 +1,32 @@
+.filterContainer {
+  display: flex;
+  column-gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f8f9fa;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+
+  .inputHolder {
+    flex: 1;
+    max-width: 250px;
+
+    .sportSelect {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .filterContainer {
+    .inputHolder {
+      max-width: none;
+      flex: 2;
+    }
+  }
+}
